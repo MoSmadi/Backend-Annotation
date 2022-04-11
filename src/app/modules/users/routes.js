@@ -1,14 +1,16 @@
 import {
-    findUserByName,
     getAllUsers,
-    createUser
+    createUser,
+    signIn
 } from "./controller"
 import { router } from '@core/router'
 
 const route = router()
 
 route.post('/', createUser)
+
 route.get('/', getAllUsers)
-route.get('/:name', findUserByName)
+
+route.get('/:email/:password', signIn)
 
 export default route

@@ -10,9 +10,9 @@ export const connect = () => {
         useNewUrlParser: db.use_new_url_parser,
         useCreateIndex: true,
         useUnifiedTopology: true
-    })
+    });
 }
 
 mongoose.set('useFindAndModify', db.use_find_and_modify);
 
-export default mongoose
+export default mongoose;

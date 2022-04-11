@@ -9,9 +9,8 @@ import {
   } from "@app/utils/httpConstants"
   
 export default class ErrorWrapper {
-    constructor(message, error="") {
+    constructor(message) {
         this.message = message
-        this.error = error ? error : message
         this.code = INTERNAL_SERVER_ERROR // default
     }
 
@@ -57,8 +56,7 @@ export default class ErrorWrapper {
     send(res) {
         let returnedMsg = {
             status: this.code,
-            message: this.message,
-            error: this.error
+            message: this.message
             }
         if (res && !res.headersSent){
             res.status(this.code)
