@@ -2,6 +2,7 @@ import { Annotation } from '@db/models'
 
 
 export const addNewAnnotation = async data => {
+    console.log(data)
     return Annotation.create(data);
 }
 
