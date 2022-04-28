@@ -7,7 +7,7 @@ const options =
     }
 
 const Annotation = new db.Schema({
-    urlPage         :   { type: String, required: true },
+    pageURL         :   { type: String, required: true },
     pageName        :   { type: String, required: true },
     text            :   { type: String, required: true },   // the selected word
     textCount       :   { type: String, required: true },   // number of the selected word in the page

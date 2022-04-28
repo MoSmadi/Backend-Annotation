@@ -25,13 +25,13 @@ export const signIn = async(req, res) => {
         const userExists = await userServices.findUserByAttr("email", req.params.email)
 
         if (userExists) {
-            console.log("email is exists")
+            // console.log("email is exists")
             // try
             // {
                 const passwordIsCorrect = await userServices.matchPassword(req.params.email, req.params.password)
 
                 if (passwordIsCorrect){
-                    console.log("email and password is true")
+                    // console.log("email and password is true")
                     res.send(userExists)
                 }
                 else {

@@ -7,7 +7,7 @@ export const addNewAnnotation = async(req, res) =>
 }
 
 export const getAnnotation = async(req, res) => {
-    res.send(await annotationServices.getAnnotation( req.params.pageUrl ))
+    res.send(await annotationServices.getAnnotation( req.params.pageURL ))
 }
 
 

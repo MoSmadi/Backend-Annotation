@@ -7,6 +7,6 @@ import { router } from '@core/router'
 const route = router()
 
 route.post('/', addNewAnnotation)
-route.get('/:pageUrl', getAnnotation)
+route.get('/:pageURL', getAnnotation)
 
 export default route

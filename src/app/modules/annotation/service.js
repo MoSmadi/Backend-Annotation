@@ -8,5 +8,5 @@ export const addNewAnnotation = async data => {
 
 export const getAnnotation = async(URL) => {
     console.log(URL);
-    return await Annotation.find({urlPage: URL})
+    return await Annotation.find({pageURL: URL})
 }
