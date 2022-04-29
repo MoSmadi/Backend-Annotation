@@ -1,15 +1,12 @@
 import {
-    // findUserByName,
-    // getAllUsers,
+    getComment,
     addComment
 } from "./controller"
 import { router } from '@core/router'
 
 const route = router()
 
-route.post('/', addComment)
-
-// route.get('/', getAllUsers)
-// route.get('/:name', findUserByName)
+route.post('/:userId/:annotateId', addComment)
+route.get('/:userId/:annotateId', getComment)
 
 export default route

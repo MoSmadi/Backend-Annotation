@@ -5,13 +5,7 @@ export const addComment = async(req, res) => {
     res.send(new_comment)
 }
 
-// export const getAllUsers = async(req, res) => {
-//     res.send(await commentServices.getAllUsers())
-// }
-//
-// export const findUserByName = async(req, res) => {
-//     const user = await commentServices.findUserByName("asd")
-//     res.send(user)
-// }
-
+export const getComment = async(req, res) => {
+    res.send(await commentServices.getComment( req.params.userId, req.params.annotateId ))
+}
 
