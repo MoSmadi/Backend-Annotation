@@ -11,4 +11,7 @@ export const getAnnotation = async(req, res) => {
 }
 
 
+export const getAllAnnotation = async(req, res) => {
+    res.send(await annotationServices.getAllAnnotation())
 
+}
