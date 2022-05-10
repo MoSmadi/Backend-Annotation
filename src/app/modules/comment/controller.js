@@ -1,8 +1,9 @@
 import * as commentServices from './service'
 
-export const addComment = async(req, res) => {
-    const new_comment = await commentServices.addComment(req.body)
-    res.send(new_comment)
+export const addComment = async(req, res) =>
+{
+    console.log("i am in add comment")
+    res.send(await commentServices.addComment(req.body))
 }
 
 export const getComment = async(req, res) => {
