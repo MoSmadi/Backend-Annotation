@@ -10,8 +10,8 @@ const Annotation = new db.Schema({
     pageURL         :   { type: String, required: true },
     pageName        :   { type: String, required: true },
     text            :   { type: String, required: true },   // the selected word
-    textCount       :   { type: String, required: true },   // number of the selected word in the page
-    textCountNum    :   { type: String, required: true },   // the selected word position in the page
+    // textCount       :   { type: String, required: true },   // number of the selected word in the page
+    // textCountNum    :   { type: String, required: true },   // the selected word position in the page
     context         :   { type: String, required: true }    // the paragraph
 
 }, options);
