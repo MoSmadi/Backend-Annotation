@@ -62,9 +62,8 @@ export const getAllUsers = async(req, res) => {
     res.send(await userServices.getAllUsers())
 }
 
-export const findUserByEmail = async(req, res) =>
+export const getUser = async(req, res) =>
 {
-    const user = await userServices.findUserByEmail(req.params.email)
+    const user = await userServices.getUser(req.params.id)
     res.send(user)
-    console.log(user)
 }

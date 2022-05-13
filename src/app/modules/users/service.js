@@ -32,4 +32,9 @@ export const getAllUsers = async() => { // get all users in the database
     return await User.find()
 }
 
+export const getUser = async(id) => //return user
+{
+    return await User.findOne({_id: id})
+}
+
 
