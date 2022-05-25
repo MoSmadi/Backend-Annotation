@@ -4,7 +4,7 @@
     "description": "Chrome extension",
     "main": "./src/index.js",
     "scripts": {
-        "serve": "nodemon --legacy-watch --exec \"babel-node ./src/index.js\"",
+        "serve": "nodemon --legacy-watch --exec npx babel-node ./src/index.js",
         "build": "babel ./src -d dist/src --copy-files && cp ./package.json ./dist/package.json && cp -r ./node_modules ./dist/node_modules"
     },
     "config": {
@@ -33,13 +33,13 @@
         "mongoose-delete": "^0.5.3"
     },
     "devDependencies": {
-        "@babel/cli": "^7.12.10",
-        "@babel/core": "^7.12.10",
+        "@babel/cli": "^7.12.1",
+        "@babel/core": "^7.18.2",
         "@babel/node": "^7.12.10",
         "@babel/preset-env": "^7.12.11",
         "@babel/register": "^7.12.10",
         "@elastic/elasticsearch-mock": "0.3.0",
-        "babel-node": "0.0.1-security",
+        "babel-node": "^0.0.1-security",
         "babel-plugin-module-resolver": "^4.1.0",
         "eslint": "^7.16.0",
         "eslint-config-airbnb-base": "^14.2.1",
