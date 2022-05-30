@@ -7,6 +7,6 @@ export const addComment = async(req, res) =>
 }
 
 export const getComment = async(req, res) => {
-    res.send(await commentServices.getComment( req.params.userId, req.params.annotateId ))
+    res.send(await commentServices.getComment(req.params.annotateId ))
 }
 
